@@ -12,7 +12,7 @@ namespace SomeBasicCSharpPrograms
         {
             Console.WriteLine("Hello, World!");
             Console.WriteLine("please choose any one program from below option");
-            Console.WriteLine("1.Calculator\n2.FibonoccieSeries\n3.ReverseWord\n4.reverse each words inn same position\n5.reverse number.\n6.palindrom number");
+            Console.WriteLine("1.Calculator\n2.FibonoccieSeries\n3.ReverseWord\n4.reverse each words in same position\n5.reverse number.\n6.palindrom number\n7.prime number\n8.prime number within a range");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -52,6 +52,16 @@ namespace SomeBasicCSharpPrograms
                     Console.WriteLine("please enter any number");
                     x = Convert.ToInt32(Console.ReadLine());
                     Reverse.Palindrome(x);
+                    break;
+                case 7:
+                    Console.WriteLine("please enter any number");
+                    x = Convert.ToInt32(Console.ReadLine());
+                    PrimeNumber.PrimeNumb(x);
+                    break;
+                case 8:
+                    Console.WriteLine("please enter any number");
+                    x = Convert.ToInt32(Console.ReadLine());
+                    PrimeNumber.PrimeNumbWithinRange(x);
                     break;
                 default:
                     Console.WriteLine("please choose existing program");
